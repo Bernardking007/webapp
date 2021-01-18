@@ -13,8 +13,7 @@ stages ('initialize') {
     }
   }
   stage ('build'){
-   sh '
-        'mvn clean package'
+   sh 'mvn clean package'
     }   
     
   }
