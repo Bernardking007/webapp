@@ -42,8 +42,7 @@ pipeline {
          sh 'rm owasp* || true'
          sh 'wget "https://raw.githubusercontent.com/Bernardking007/webapp/master/Owasp-dependency-checker" '
          sh 'chmod +x owasp-dependency-check.sh'
-         sh 'bash owasp-dependency-check.sh'
-         sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'  
+         sh 'bash owasp-dependency-check.sh'  
         }
     }    
         stage('package') {
